@@ -1,8 +1,25 @@
 POST  http://127.0.0.1:3000/auth/register
-Content-Type: aplication/json
+Content-Type: application/json
 
 {
     "name":"prueba",
-    "email": "casa",
-    "password": "12345"
+    "email": "sg@gc.com",
+    "password":"123456"
 }
+
+###login sin conexion a BDD
+
+POST  http://127.0.0.1:3000/auth/login
+Content-Type: application/json
+
+{
+    "name":"prueba",
+    "email": "sg2@gc.com",
+    "password":"1234567"
+}
+
+### users
+
+
+GET  http://127.0.0.1:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoxLCJpYXQiOjE3OTQ0OTI2MDMsImV4cCI6MTc5NDQ5MjY2M30.won6SknL_503f4OiPX0r0J2383Y-w-I4KnK2AriLNSo
